@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniFix | Administration Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <img src="assets/unifixlogo.png" alt="UniFix logo" class="sidebar-logo">
+            <p class="menu-title">ADMINISTRATION</p>
+            <a class="active" href="admin-dashboard.html">Dashboard</a>
+            <a href="manage-complaints.html">Manage Complaints</a>
+            <button id="adminLogout" class="logout-button">Logout</button>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar"><h1>Administration Dashboard</h1><p id="adminTopName">Welcome</p></header>
+            <section class="welcome-box">
+                <h2 id="adminWelcome">Welcome</h2>
+                <p>Review campus complaints and update their status.</p>
+                <a class="button button-link" href="manage-complaints.html">View All Complaints</a>
+            </section>
+            <section class="stats">
+                <div class="stat-card"><p>Total Complaints</p><h2 id="adminTotal">0</h2></div>
+                <div class="stat-card"><p>Pending</p><h2 id="adminPending">0</h2></div>
+                <div class="stat-card"><p>In Progress</p><h2 id="adminProgress">0</h2></div>
+                <div class="stat-card"><p>Resolved</p><h2 id="adminResolved">0</h2></div>
+            </section>
+            <section class="panel">
+                <h2>Latest Complaints</h2>
+                <div class="table-wrap">
+                    <table>
+                        <thead><tr><th>ID</th><th>Student</th><th>Issue</th><th>Category</th><th>Status</th></tr></thead>
+                        <tbody id="adminRecentTable"></tbody>
+                    </table>
+                </div>
+                <p id="adminNoComplaints" class="muted">No complaints have been submitted.</p>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/common.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>

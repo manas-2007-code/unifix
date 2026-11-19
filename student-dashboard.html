@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniFix | Student Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <img src="assets/unifixlogo.png" alt="UniFix logo" class="sidebar-logo">
+            <p class="menu-title">STUDENT MENU</p>
+            <a class="active" href="student-dashboard.html">Dashboard</a>
+            <a href="report-issue.html">Report an Issue</a>
+            <a href="my-complaints.html">My Complaints</a>
+            <button id="studentLogout" class="logout-button">Logout</button>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar">
+                <h1>Student Dashboard</h1>
+                <p id="studentTopName">Welcome</p>
+            </header>
+
+            <section class="welcome-box">
+                <h2 id="studentWelcome">Welcome to UniFix</h2>
+                <p>Report campus problems and check their progress.</p>
+                <a class="button button-link" href="report-issue.html">Report New Issue</a>
+            </section>
+
+            <section class="stats">
+                <div class="stat-card"><p>Total Complaints</p><h2 id="totalCount">0</h2></div>
+                <div class="stat-card"><p>Pending</p><h2 id="pendingCount">0</h2></div>
+                <div class="stat-card"><p>In Progress</p><h2 id="progressCount">0</h2></div>
+                <div class="stat-card"><p>Resolved</p><h2 id="resolvedCount">0</h2></div>
+            </section>
+
+            <section class="panel">
+                <h2>Recent Complaints</h2>
+                <div class="table-wrap">
+                    <table>
+                        <thead><tr><th>ID</th><th>Issue</th><th>Category</th><th>Date</th><th>Status</th></tr></thead>
+                        <tbody id="recentComplaints"></tbody>
+                    </table>
+                </div>
+                <p id="noRecentComplaints" class="muted">You have not submitted any complaints yet.</p>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/common.js"></script>
+    <script src="js/student.js"></script>
+</body>
+</html>

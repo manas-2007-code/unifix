@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniFix | Report an Issue</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/forms.css">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <img src="assets/unifixlogo.png" alt="UniFix logo" class="sidebar-logo">
+            <p class="menu-title">STUDENT MENU</p>
+            <a href="student-dashboard.html">Dashboard</a>
+            <a class="active" href="report-issue.html">Report an Issue</a>
+            <a href="my-complaints.html">My Complaints</a>
+            <button id="studentLogout" class="logout-button">Logout</button>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar"><h1>Report an Issue</h1><p>Tell us about a campus problem.</p></header>
+            <section class="panel form-panel">
+                <form id="reportForm">
+                    <label for="issueTitle">Issue Title</label>
+                    <input type="text" id="issueTitle" required placeholder="Example: Wi-Fi is not working">
+
+                    <label for="issueCategory">Category</label>
+                    <select id="issueCategory" required>
+                        <option value="">Choose category</option>
+                        <option>Wi-Fi and Internet</option>
+                        <option>Electricity</option>
+                        <option>Air Conditioning</option>
+                        <option>Classroom</option>
+                        <option>Hostel</option>
+                        <option>Cleanliness</option>
+                        <option>Other</option>
+                    </select>
+
+                    <label for="issueLocation">Location</label>
+                    <input type="text" id="issueLocation" required placeholder="Example: Block 32, Room 204">
+
+                    <label for="issuePriority">Priority</label>
+                    <select id="issuePriority" required>
+                        <option>Low</option>
+                        <option selected>Medium</option>
+                        <option>High</option>
+                    </select>
+
+                    <label for="issueDescription">Description</label>
+                    <textarea id="issueDescription" rows="5" required placeholder="Explain the problem"></textarea>
+
+                    <button type="submit" class="button">Submit Complaint</button>
+                    <p id="reportMessage" class="message"></p>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/common.js"></script>
+    <script src="js/student.js"></script>
+</body>
+</html>

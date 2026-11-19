@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniFix | Administration Sign Up</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/forms.css">
+</head>
+<body class="form-page">
+    <main class="form-card">
+        <img src="assets/unifixlogo.png" alt="UniFix logo" class="logo small-logo">
+        <h1>Administration Sign Up</h1>
+        <p class="muted">Create an administration account.</p>
+
+        <form id="adminSignupForm">
+            <label for="adminName">Faculty / Admin Name</label>
+            <input type="text" id="adminName" required>
+
+            <label for="adminEmail">Official Email</label>
+            <input type="email" id="adminEmail" required>
+
+            <label for="facultyId">Faculty / Employee ID</label>
+            <input type="text" id="facultyId" required>
+
+            <label for="adminDepartment">Department / Branch</label>
+            <input type="text" id="adminDepartment" required>
+
+            <label for="adminDesignation">Designation</label>
+            <input type="text" id="adminDesignation" placeholder="Example: Faculty" required>
+
+            <label for="adminPassword">Password</label>
+            <input type="password" id="adminPassword" required minlength="4">
+
+            <label for="adminConfirmPassword">Confirm Password</label>
+            <input type="password" id="adminConfirmPassword" required minlength="4">
+
+            <button type="submit" class="button">Create Administration Account</button>
+            <p id="adminSignupMessage" class="message"></p>
+        </form>
+
+        <p class="small-note">For classroom demonstration only. Public websites must verify administration accounts before granting access.</p>
+        <p class="back-link"><a href="index.html">Back to Login</a></p>
+    </main>
+
+    <script src="js/common.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>

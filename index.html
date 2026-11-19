@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniFix | Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/forms.css">
+</head>
+<body class="login-page">
+    <main class="login-card">
+        <img src="assets/unifixlogo.png" alt="UniFix logo" class="logo">
+        <h1>Welcome to UniFix</h1>
+        <p class="muted">Campus Issue Reporting System</p>
+
+        <form id="loginForm">
+            <label for="email">Email address</label>
+            <input type="email" id="email" required placeholder="Enter your email">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" required placeholder="Enter your password">
+
+            <button type="submit" class="button">Login</button>
+            <p id="loginMessage" class="message"></p>
+        </form>
+
+        <div class="signup-options">
+            <p>New to UniFix?</p>
+            <a href="student-signup.html">Student Sign Up</a>
+            <a href="admin-signup.html">Administration Sign Up</a>
+        </div>
+        <p class="small-note">Student project prototype. Do not enter real passwords or sensitive university data.</p>
+    </main>
+
+    <script src="js/common.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>

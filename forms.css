@@ -1,0 +1,98 @@
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    background-color: #333;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.58)),
+        url("https://www.lpu.in/lpu-assets/images/about-lpu/infrastructure/large/architectural-marvels.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+.login-card, .form-card {
+    width: 100%;
+    max-width: 470px;
+    padding: 30px;
+    background: white;
+    border-top: 6px solid #f47721;
+    border-radius: 6px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.18);
+}
+
+.login-card {
+    max-width: 430px;
+}
+
+.login-card h1, .form-card h1 {
+    margin: 8px 0;
+    font-size: 25px;
+}
+
+.login-card label, .form-card label {
+    display: block;
+    margin: 14px 0 6px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.login-card input, .form-card input, .form-card select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: white;
+}
+
+.login-card .button, .form-card .button {
+    width: 100%;
+    margin-top: 18px;
+}
+
+.signup-options {
+    margin-top: 22px;
+    padding-top: 14px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+.signup-options p {
+    margin: 0 0 12px;
+    color: #666;
+    font-size: 14px;
+}
+
+.signup-options a {
+    display: block;
+    margin: 9px 0;
+    font-weight: bold;
+}
+
+.form-page {
+    min-height: 100vh;
+    padding: 30px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-card {
+    max-width: 520px;
+}
+
+.form-card .message {
+    margin-bottom: 0;
+}
+
+.back-link {
+    text-align: center;
+    margin: 20px 0 0;
+}
+
+@media (max-width: 600px) {
+    .login-card, .form-card {
+        padding: 22px;
+    }
+}
