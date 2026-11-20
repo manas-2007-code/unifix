@@ -50,6 +50,13 @@
 
                     <label for="issueDescription">Description</label>
                     <textarea id="issueDescription" rows="5" required placeholder="Explain the problem"></textarea>
+                    <label for="issueFile">Upload Image or Document</label>
+                    <input type="file"
+                    id="issueFile"
+                    accept="image/*,.pdf,.doc,.docx"
+                              >
+
+                    <p>Supported formats: JPG, PNG, PDF, DOC and DOCX. Maximum size: 2 MB.</p>
 
                     <button type="submit" class="button">Submit Complaint</button>
                     <p id="reportMessage" class="message"></p>
