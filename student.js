@@ -40,6 +40,31 @@ function showStudentDashboard() {
             myList.push(complaints[i]);
         }
     }
+    var issueFile = document.getElementById("issueFile");
+var filePreview = document.getElementById("filePreview");
+
+issueFile.addEventListener("change", function () {
+    var file = issueFile.files[0];
+
+    if (!file) {
+        filePreview.style.display = "none";
+        return;
+    }
+
+    if (file.size > 2 * 1024 * 1024) {
+        alert("File size must be less than 2 MB.");
+        issueFile.value = "";
+        filePreview.style.display = "none";
+        return;
+    }
+
+    if (file.type.startsWith("image/")) {
+        filePreview.src = URL.createObjectURL(file);
+        filePreview.style.display = "block";
+    } else {
+        filePreview.style.display = "none";
+    }
+});
 
     document.getElementById("totalCount").textContent = myList.length;
     document.getElementById("pendingCount").textContent = countStatus(myList, "Pending");
