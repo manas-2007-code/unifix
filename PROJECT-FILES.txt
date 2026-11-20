@@ -9,21 +9,17 @@ UniFix-First-Year/
 |-- admin-dashboard.html
 |-- manage-complaints.html
 |
-|-- css/
+
 |   |-- style.css
 |   |-- forms.css
 |   |-- dashboard.css
 |
-|-- js/
+
 |   |-- common.js
 |   |-- auth.js
 |   |-- student.js
 |   |-- admin.js
 |
-|-- assets/
-|   |-- unifix-logo.svg
+|.  |-- unifix-logo.svg
 |
 |-- README.md
-|-- CODE-EXPLANATION.md
-|-- VIVA-GUIDE.md
-|-- PROJECT-FILES.txt
