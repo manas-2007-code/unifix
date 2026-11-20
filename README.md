@@ -15,12 +15,12 @@ UniFix is a basic campus issue reporting website made with HTML, CSS and Java Sc
 
 ## Code folders
 
-- `css/style.css` - Common website colours and text
-- `css/forms.css` - Login and sign-up page design
-- `css/dashboard.css` - Dashboard design
-- `js/common.js` - Simple storage and logout functions
-- `js/auth.js` - Login and sign-up code
-- `js/student.js` - Student pages and complaint submission
-- `js/admin.js` - Admin pages and status updates
-- `assets/unifix-logo.svg` - UniFix logo
+- `style.css` - Common website colours and text
+- `forms.css` - Login and sign-up page design
+- `dashboard.css` - Dashboard design
+- `common.js` - Simple storage and logout functions
+- `auth.js` - Login and sign-up code
+- `student.js` - Student pages and complaint submission
+- `admin.js` - Admin pages and status updates
+- `unifix-logo.svg` - UniFix logo
 
